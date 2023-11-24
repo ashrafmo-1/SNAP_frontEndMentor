@@ -94,12 +94,16 @@ header{
 }
 
 /* start landing page */
-.landing{
+.landing {
     height: calc(100vh - 50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+
+    .landingImageMobile{
+        display: none;
+    }
 
     .textcontent{
 
@@ -129,6 +133,12 @@ header{
     }
     .landingImage{
         width: 350px;
+    }
+}
+
+@media(max-width:650px) {
+    .landing{
+        flex-direction: column;
     }
 }
 /* end landing page */
