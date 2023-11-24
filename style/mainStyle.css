@@ -1,0 +1,137 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(250, 250, 250);
+
+    .container{
+width: 80%;
+margin: auto;
+    }
+}
+
+header{
+    text-transform: capitalize;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+
+    .navgationContainer{
+        width: 90%;
+        margin: auto;
+    }
+
+    .navgation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .linksBetweenBrand{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .brandnamn{
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .linksLeft{
+        display: flex;
+        gap: 40px;
+
+        .link{
+            color: rgb(183, 183, 183);
+            transition: .3s;
+        }
+        .link:hover{
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .nav{
+        display: flex;
+        gap: 15px;
+
+        .btn {
+            background-color: transparent;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .btn.active{
+            background-color: transparent;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 4px 8px;
+            font-weight: bold;
+        }
+    }
+
+    /* more links on click */
+    .Featuers, .Company{
+        position: relative;
+    }
+
+    .moreFeatuers, .moreCompany {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        width: 100px;
+        height: 180px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        top: 30px;
+        left: -30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: none;
+        border-radius: 10px;
+    }
+    .moreFeatuers.active, .moreCompany.active {
+        display: flex;
+    }
+}
+
+/* start landing page */
+.landing{
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .textcontent{
+
+        .title{
+            font-size: 75px;
+            margin-bottom: 40px;
+        }
+        .desc{
+            font-size: 16px;
+            color: #919191;
+            margin-bottom: 40px;
+        }
+        .btn{
+            background-color: transparent;
+            padding: 8px 17px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .allCatigorys{
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+    .landingImage{
+        width: 350px;
+    }
+}
+/* end landing page */
+
+
+/* start media screens */

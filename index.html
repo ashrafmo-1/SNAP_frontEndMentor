@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- reset page -->
+  <link rel="stylesheet" href="./style/reset.css"> 
+  <!-- links -->
+  <link rel="stylesheet" href="./style/mainStyle.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <!-- header bar -->
+  <header>
+    <div class="navgationContainer">
+      <div class="navgation">
+        <div class="linksBetweenBrand">
+          <h2 class="brandnamn">snap</h2>
+
+          <div class="linksLeft">
+            <a class="link Featuers" href="#commingSoon" onclick="featuersToggleActive()">featuers
+              <div class="moreFeatuers">
+                <div class="">
+                  <i></i>
+                  todo list
+                </div>
+                <div class="">
+                  <i></i>
+                  calender
+                </div>
+                <div class="">
+                  <i></i>
+                  reminders
+                </div>
+                <div class="">
+                  <i></i>
+                  planning
+                </div>
+              </div>
+            </a>
+            
+            <a class="link Company" href="#commingSoon" onclick="companyToggleActive()">company
+              <div class="moreCompany">
+                <div class="">
+                  <i></i>
+                  todo list
+                </div>
+                <div class="">
+                  <i></i>
+                  calender
+                </div>
+                <div class="">
+                  <i></i>
+                  reminders
+                </div>
+                <div class="">
+                  <i></i>
+                  planning
+                </div>
+              </div>
+            </a>
+
+            <a class="link" href="#commingSoon">careers</a>
+            <a class="link" href="#commingSoon">about</a>
+          </div>
+          
+        </div>
+        <nav class="nav">
+          <button class="btn" href="#commingSoon">login</button>
+          <button class="btn active" href="#commingSoon">register</button>
+        </nav>
+    </div>
+  </header>
+  <!-- all page container -->
+  <div class="container">
+    <!-- landing page -->
+    <div class="landing">
+      <div class="textcontent">
+        <h1 class="title">Make <br> remote work</h1>
+        <p class="desc">
+          Get your team in sync. no matter your location. <br>
+          Streamline processes. create team rituals. and <br>
+          watch productivity soar.
+        </p>
+        <button class="btn">learn more</button>
+
+        <div class="allCatigorys">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div>
+        <img class="landingImage" src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./javascript/js.js" />
+</body>
+</html>
