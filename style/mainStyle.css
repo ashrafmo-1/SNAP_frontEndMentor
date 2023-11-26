@@ -13,6 +13,7 @@ header{
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    background-color: rgb(250, 250, 250);
 
     .navgationContainer{
         width: 90%;
@@ -21,14 +22,21 @@ header{
 
     .navgation {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .linksAll{
+        display: flex;
+        align-items: center;
+        gap: 40px;
     }
 
     .linksBetweenBrand{
         display: flex;
         align-items: center;
-        gap: 60px;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .brandnamn{
@@ -135,15 +143,18 @@ header{
         width: 350px;
     }
 }
+/* end landing page */
 
+
+/* start media screens */
 @media(max-width:650px) {
     .landing{
         flex-direction: column;
     }
 }
-/* end landing page */
-
-
-/* start media screens */
-
+@media(min-width:701px) {
+    .toggle{
+        display: none;
+    }
+}
 /* end media screens */
